@@ -31,7 +31,7 @@ export default function Cart() {
       "Content-Type":"application/json"
     }
 
-    const response=await fetch("https://gofoodback-ma9i.onrender.com/api/create-checkout-session",{
+    const response=await fetch("http://localhost:5000/api/create-checkout-session",{
       method:"POST",
       headers:headers,
       body:JSON.stringify(body)
@@ -50,8 +50,8 @@ export default function Cart() {
   // end
   const handleCheckOut= async()=>  {
     let userEmail = localStorage.getItem("userEmail");
-    //let response = await fetch ("http://localhost:5000/api/orderData", {
-     let response = await fetch("https://gofoodback-ma9i.onrender.com/api/orderData", {
+    let response = await fetch ("http://localhost:5000/api/orderData", {
+    // let response = await fetch("https://gofoodback-ma9i.onrender.com/api/orderData", {
         method: 'POST',
          headers: {
           'Content-Type': 'application/json'
