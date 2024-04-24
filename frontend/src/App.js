@@ -13,10 +13,12 @@ import Login from './screens/Login';
 import Signup from './screens/Signup';
  import MyOrder from './screens/MyOrder';
  import { CartProvider } from './components/ContextReducer';
+// start
+import Cancel from './components/Cancel.js';
+// end
 
 
-
-function App() {
+function App() { 
   return ( 
     <CartProvider>
       <Router>
@@ -26,6 +28,9 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/creatuser" element={<Signup />} />
             <Route exact path="/myOrder" element={<MyOrder />} /> 
+            {/* start */}
+            <Route exact path="/cancel" element={<Cancel />} /> 
+            {/* end */}
           </Routes>
         </div>
       </Router>

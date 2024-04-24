@@ -8,8 +8,8 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
-        //await fetch("http://localhost:5000/api/myOrderData", {
-        await fetch("https://gofoodback-8jty.onrender.com/api/myOrderData", {
+        await fetch("http://localhost:5000/api/myOrderData", {
+        //await fetch("https://gofoodback-8jty.onrender.com/api/myOrderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ export default function MyOrder() {
                                                     </div> :
 
                                                         <div className='col-12 col-md-6 col-lg-3' >
-                                                            <div className="card border mt-4 bg-black text-white" style={{ width: "19.5rem", maxHeight: "220px" }}>
+                                                            <div className="card border mt-4 bg-black text-white" style={{ width: "20.5rem", maxHeight: "220px" }}>
                                                                 <img src={arrayData.img} className="card-img-top " alt="..." style={{ height: "120px", objectFit: "fill" }} /> 
                                                                 <div className="card-body">
                                                                     <h5 className="card-title">{arrayData.name}</h5>

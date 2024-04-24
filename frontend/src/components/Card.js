@@ -41,14 +41,14 @@ export default function Card(props) {
     }, [])
 
     return (
-      <div className="bg-black text-white">
+      <div className="bg-black text-white ">
         <div className="bg-black text-white card m-3 border" style={{ width: "16rem", maxHeight: "360px"}}>
           <img src={props.foodItem.img} className=" card-img-top" alt="..." style={{ height: "120px", objectFit: "fill" }} />
           <div className="card-body">
             <h5 className="card-title">{props.foodItem.name}</h5>
 
             <div className='container w-100' style={{marginLeft:'-30px'}}>
-              <select className="m-2 h-100 w-20 bg-success rounded text-white" onChange={(e) => setQty(e.target.value)}>
+              <select className=" h-100 w-20 bg-success rounded text-white" onChange={(e) => setQty(e.target.value)}>
                 {Array.from(Array(6), (e, i) => {
                   return (
                     <option key={i + 1} value={i + 1}>{i + 1}</option>)
