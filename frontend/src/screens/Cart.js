@@ -100,9 +100,10 @@ export default function Cart() {
           </tbody> 
         </table>
         <div><h1 className='fs-2'>Total Price: {totalPrice}/-</h1></div>
-        <div>
+        <div className='d-flex'>
            {/* <button className='btn-lg bg-success  text-white' onClick={handleCheckOut}>Check Out</button>  */}
-           <button className='btn-lg bg-success  m-3 text-white' onClick={()=>{ makePayment();handleCheckOut()}}>Payment</button>    
+           <button className='btn-lg bg-success  m-3 text-white' onClick={()=>{ makePayment();handleCheckOut()}}>Payment</button>
+           <div className='my-4 mx-3 fs-5'>* For  dummy  payment  use 4000 0035 6000 0008</div>    
         </div>
       </div>
     </div>
