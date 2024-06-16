@@ -39,7 +39,7 @@ export default function Home() {
                 <input className="form-control me-2 w-75 bg-white text-dark" type="search" placeholder="Search in here..." aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
               </div>
             </div>
-            <div className="carousel-item active" >
+            {/* <div className="carousel-item active" >
               <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100  " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
@@ -47,16 +47,16 @@ export default function Home() {
             </div>
             <div className="carousel-item">
               <img src="https://source.unsplash.com/random/900x700/?starter" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
-            </div>
+            </div> */}
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
-          </button>
+          </button> */}
         </div>
       </div> 
    
