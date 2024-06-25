@@ -59,7 +59,8 @@ export default function MyOrder() {
                                                                     <div className='container w-100 p-0' style={{ height: "65px" }}>
                                                                         <span className='m-1 fs-5'>{arrayData.qty}</span>
                                                                         <span className='m-1 fs-5'>{arrayData.size}</span>
-                                                                        {/* data */}
+                                                                        <span className='m-1 '>{time.toLocaleTimeString()}</span>
+
                                                                         <span className='m-1 '>{time.toLocaleTimeString()}</span>
                                                                         <div className=' d-inline ms-2 h-100 w-20 fs-5' >
                                                                             ₹{arrayData.price}/-
