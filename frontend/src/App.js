@@ -22,7 +22,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <React.Fragment>
+        <div>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
@@ -32,7 +32,7 @@ function App() {
             <Route exact path="/cancel" element={<Cancel />} />
             {/* end */}
           </Routes>
-        </React.Fragment>
+        </div>
       </Router>
     </CartProvider>
   );
