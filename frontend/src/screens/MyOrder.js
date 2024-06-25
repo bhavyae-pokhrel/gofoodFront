@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 
 export default function MyOrder() {
 
+    let time= new Date()
     const [orderData, setOrderData] = useState("");
 
     const fetchMyOrder = async () => {
@@ -32,7 +33,7 @@ export default function MyOrder() {
             <div>
                 <Navbar />
             </div>
-            
+
             <div className='container'>
                 <div className='row'>
 
@@ -52,13 +53,14 @@ export default function MyOrder() {
 
                                                         <div className='col-12 col-md-6 col-lg-3' >
                                                             <div className="card border mt-4 bg-black text-white" style={{ width: "20.5rem", maxHeight: "220px" }}>
-                                                                <img src={arrayData.img} className="card-img-top " alt="..." style={{ height: "120px", objectFit: "fill" }} /> 
+                                                                <img src={arrayData.img} className="card-img-top " alt="..." style={{ height: "120px", objectFit: "fill" }} />
                                                                 <div className="card-body">
                                                                     <h5 className="card-title">{arrayData.name}</h5>
                                                                     <div className='container w-100 p-0' style={{ height: "65px" }}>
                                                                         <span className='m-1 fs-5'>{arrayData.qty}</span>
                                                                         <span className='m-1 fs-5'>{arrayData.size}</span>
-                                                                        <span className='m-1 '>{data}</span>
+                                                                        {/* data */}
+                                                                        <span className='m-1 '>{time.toLocaleTimeString()}</span>
                                                                         <div className=' d-inline ms-2 h-100 w-20 fs-5' >
                                                                             ₹{arrayData.price}/-
                                                                         </div>
@@ -72,15 +74,15 @@ export default function MyOrder() {
                                         })
                                     )
                                 }) :
-                                
+
                                 <div>
                                    <div className='text-white text-center fs-1'>Please Order Something!</div>
                                 </div>
                         )
-                        }): 
-                        []    
-                           
-                        } 
+                        }):
+                        []
+
+                        }
                 </div>
             </div >
             <Footer/>

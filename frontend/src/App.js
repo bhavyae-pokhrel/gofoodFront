@@ -18,21 +18,21 @@ import Cancel from './components/Cancel.js';
 // end
 
 
-function App() { 
-  return ( 
+function App() {
+  return (
     <CartProvider>
       <Router>
-        <div>
+        <React.Fragment>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/creatuser" element={<Signup />} />
-            <Route exact path="/myOrder" element={<MyOrder />} /> 
+            <Route exact path="/myOrder" element={<MyOrder />} />
             {/* start */}
-            <Route exact path="/cancel" element={<Cancel />} /> 
+            <Route exact path="/cancel" element={<Cancel />} />
             {/* end */}
           </Routes>
-        </div>
+        </React.Fragment>
       </Router>
     </CartProvider>
   );
