@@ -37,12 +37,12 @@ export default function Login() {
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-            <input type="email" className="form-control" name='email' value={credentials.email} onChange={onChange} id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <input type="email" className="form-control" name='email' placeholder='guest@gmail.com' value={credentials.email} onChange={onChange} id="exampleInputEmail1" aria-describedby="emailHelp" />
             <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div className="mt-3">
             <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-            <input type="password" className="form-control" name='password' value={credentials.password} onChange={onChange} />
+            <input type="password" className="form-control" name='password' placeholder='123456' value={credentials.password} onChange={onChange} />
           </div>
 
           <button type="submit" className="m-3 btn btn-success">Submit</button>
