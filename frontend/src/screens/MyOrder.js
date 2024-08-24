@@ -44,11 +44,10 @@ export default function MyOrder() {
                                             return (
                                                 <div className='text-white'>
                                                     {arrayData.Order_date ? <div className='m-auto mt-5 fs-3'>
-
-                                                        //{data = arrayData.Order_date}
+                                                
                                                 {new Date(arrayData.Order_date).toLocaleString('en-GB', {day: 'numeric',month: 'short',year: 'numeric',hour: '2-digit',minute: '2-digit'})}
                                                         <hr />
-                                                    </div> :
+                                                    </div>:
 
                                                         <div className='col-12 col-md-6 col-lg-3' >
                                                             <div className="card border mt-4 bg-black text-white" style={{ width: "20.5rem", maxHeight: "220px" }}>
@@ -58,7 +57,7 @@ export default function MyOrder() {
                                                                     <div className='container w-100 p-0' style={{ height: "65px" }}>
                                                                         <span className='m-1 fs-5'>{arrayData.qty}</span>
                                                                         <span className='m-1 fs-5'>{arrayData.size}</span>
-                                                                        // <span className='m-1 '>{data}</span>
+                                                                       
                                                                         <div className=' d-inline ms-2 h-100 w-20 fs-5' >
                                                                             ₹{arrayData.price}/-
                                                                         </div>
